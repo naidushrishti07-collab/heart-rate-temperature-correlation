@@ -3,14 +3,6 @@
 ## Overview
 A generalized R toolkit for analyzing cross-correlation between heart rate (HR) and temperature signals from physiological data. This analysis identifies temporal relationships between these physiological parameters using both original and detrended signal processing.
 
-## Features
-- **Flexible Configuration**: Easy-to-modify configuration file for different datasets
-- **Batch Processing**: Analyze multiple files at once
-- **Signal Processing**: Standardization and optional detrending using LOESS smoothing
-- **Cross-Correlation Analysis**: Comprehensive lag and correlation computation
-- **Automated Reporting**: Excel outputs and publication-ready visualizations
-- **Summary Statistics**: Detailed analysis metrics and interpretations
-
 ## Repository Structure
 ```
 heart-rate-temperature-correlation/
@@ -98,7 +90,7 @@ Your Excel file must contain:
 | 10   | 73.2        | 36.7                |
 | 20   | 71.8        | 36.9                |
 
-## Configuration Parameters
+## Example Configuration Parameters
 
 | Parameter | Description | Default |
 |-----------|-------------|---------|
@@ -142,19 +134,6 @@ Your Excel file must contain:
 - **0.2 < |r| < 0.4**: Weak correlation
 - **|r| < 0.2**: Very weak/no correlation
 
-## Example Results
-
-Temperature vs Heart Rate (Original):
-Max Lag: -13.17 minutes
-Correlation: 0.408
-(Heart rate changes precede temperature changes)
-
-Temperature vs Heart Rate (Detrended):
-Max Lag: -13.17 minutes
-Correlation: 0.478
-(Heart rate changes precede temperature changes)
-```
-
 ## Troubleshooting
 
 ### Common Issues
@@ -168,8 +147,8 @@ Correlation: 0.478
    - Check for extra spaces in column names
 
 3. **Missing data warnings**:
-   - Normal if your data has gaps
-   - Rows with NA values are automatically removed
+   - Check if your data has gaps
+   - Rows and columns with NA values detected
 
 ## Methods
 
@@ -186,18 +165,6 @@ Correlation: 0.478
 - **Standardization**: `(x - mean(x)) / sd(x)`
 - **LOESS**: Local regression with configurable span
 - **Cross-correlation**: Pearson correlation at various time lags
-
-## Citation
-If you use this code in your research, please cite:
-```
-[Your citation information here]
-```
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-[Your license here - e.g., MIT, GPL, etc.]
 
 ## Contact
 [Your contact information]
