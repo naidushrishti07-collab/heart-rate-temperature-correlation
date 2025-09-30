@@ -132,8 +132,8 @@ Your Excel file must contain:
 ## Interpretation Guide
 
 ### Lag Values
-- **Negative lag**: Temperature changes precede heart rate changes
-- **Positive lag**: Heart rate changes precede temperature changes
+- **Negative lag**: Heart rate changes precede temperature changes
+- **Positive lag**: Temperature changes precede heart rate changes
 - **Zero lag**: Changes are simultaneous
 
 ### Correlation Values
@@ -144,16 +144,15 @@ Your Excel file must contain:
 
 ## Example Results
 
-```
 Temperature vs Heart Rate (Original):
 Max Lag: -13.17 minutes
 Correlation: 0.408
-(Temperature changes precede heart rate changes)
+(Heart rate changes precede temperature changes)
 
 Temperature vs Heart Rate (Detrended):
 Max Lag: -13.17 minutes
 Correlation: 0.478
-(Temperature changes precede heart rate changes)
+(Heart rate changes precede temperature changes)
 ```
 
 ## Troubleshooting
