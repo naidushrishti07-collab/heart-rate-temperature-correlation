@@ -14,8 +14,8 @@ library(grid)
 
 # List of files to process
 FILES_TO_PROCESS <- c(
-    "~/Desktop/DBF2.xlsx",
-    "~/Desktop/DBTNF12.xlsx"
+    "~/Desktop/your_file1.xlsx",
+    "~/Desktop/your_file2.xlsx"
     # Add more files as needed
 )
 
