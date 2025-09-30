@@ -118,9 +118,9 @@ find_max_correlation <- function(ccf_data, title) {
     cat(sprintf("Correlation: %.3f\n", max_corr))
     
     if(max_lag < 0) {
-        cat("(Temperature changes precede heart rate changes)\n")
-    } else if(max_lag > 0) {
         cat("(Heart rate changes precede temperature changes)\n")
+    } else if(max_lag > 0) {
+        cat("(Temperature changes precede heart rate changes)\n")
     } else {
         cat("(Changes are simultaneous)\n")
     }
