@@ -1,0 +1,27 @@
+# R specific files
+.Rhistory
+.Rdata
+.Rproj.user/
+*.Rproj
+
+# Data files (for privacy/size reasons)
+*.xlsx
+*.xls
+*.csv
+data/*.xlsx
+data/*.xls
+data/*.csv
+
+# Output files
+output/*.xlsx
+output/*.pdf
+output/*.png
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*~
+*.swp
+*.bak
